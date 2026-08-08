@@ -13,6 +13,8 @@ body {
     background-color: lightgray;
 }
 
+
+
 #header {
     display: flex;
     align-items: center;
@@ -39,5 +41,86 @@ body {
     color: #ffffff;
 }
 
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-color: #ad9a9a;
+}
 
+.img-fluid {
+    border-radius: 10px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
 
+.img-fluid:hover {
+    transform: scale(1.1);
+}
+
+.container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: black;
+}
+
+.para {
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+.fgiet-name {
+    color: rgb(13, 229, 157);
+    font-size: 8rem;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+}   
+.display-4 {
+    color: rgb(13, 229, 157);
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+#card1 , #card2 , #card3 , #card4 {
+    margin: 2rem;
+    height: 300px;
+    width: 300px;
+}
+
+#card1:hover , #card2:hover , #card3:hover  , #card4:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+#card1 {
+    color: rgb(13, 229, 157);
+}
+
+#card2 {
+    background-color: rgb(13, 229, 157);
+}
+
+#card3 {
+    color: rgb(13, 229, 157);
+}
+
+#card4 {
+    background-color: rgb(13, 229, 157);
+}
+
+.card-body {
+    margin-top: 10rem;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
