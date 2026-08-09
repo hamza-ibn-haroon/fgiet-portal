@@ -67,6 +67,23 @@ body {
     background-color: black;
 }
 
+.container-text-center {
+    text-align: center;
+    padding: 2rem;
+    animation: fadeInLeft 1s ease-out forwards;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); /* Starts 50px to the left */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);     /* Ends at its natural position */
+  }
+}
+
 .para {
     color: white;
     font-size: 1.2rem;
@@ -123,4 +140,40 @@ body {
     padding: 1rem;
     text-align: center;
     margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  
+  /* Syntax: name | duration | timing-function | iteration-count */
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50%{
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
