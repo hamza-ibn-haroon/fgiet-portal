@@ -154,7 +154,16 @@ body {
     }
 }
 
+.container-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: rgb(60, 21, 21);
+}
+
 .spinner {
+    margin: 50px 100px 100px 100px;
   width: 50px;
   height: 50px;
   border: 5px solid #f3f3f3;
@@ -171,7 +180,7 @@ body {
   }
 
   50%{
-    transform: rotate(45deg);
+    transform: rotate(90deg);
   }
   100% {
     transform: rotate(360deg);
