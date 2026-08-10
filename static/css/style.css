@@ -186,3 +186,7 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.sample {
+    background-color: red;
+}
